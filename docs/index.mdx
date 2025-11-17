@@ -18,10 +18,39 @@ Willkommen zur offiziellen Dokumentation deines Projekts. Diese Seite ist als **
 ## 🚀 Introduction / Einführung
 PB Verify is one of the fastest and simplest Discord verification bots on the market.
 
-PB Verify gehört zu den schnellsten und einfachsten Verifizierungs-Bots für Discord.
+PB Verify gehört zu den schnellsten und einfachsten Verifizierungs‑Bots für Discord.
 
 ---
-## 🧩 Setup Guide (English)
+## 🧩 Bot Commands / Bot-Befehle
+
+Der Bot ist **öffentlich**. Alles wird über Slash-Commands gesteuert – keine Installation oder Konfiguration außerhalb von Discord.
+
+Hier sind alle wichtigen Befehle:
+
+---
+### **/verify-setup**
+**EN:** Choose the role users receive after verifying.
+**DE:** Wähle die Rolle, die verifizierte Nutzer erhalten.
+
+**Option:** `role` – die zu vergebende Rolle
+
+---
+### **/verify-send**
+**EN:** Sends the verification embed to the selected channel.
+**DE:** Sendet das Verifizierungs-Embed in den ausgewählten Kanal.
+
+**Option:** `channel` – Kanal, in dem das Embed erscheinen soll
+
+Nach dem Ausführen öffnet sich ein Modal für **Titel**, **Beschreibung** und **Footer**.
+
+---
+### **/verify-reset** (falls dein Bot ihn enthält)
+**EN:** Reset all verification settings.
+**DE:** Setzt alle Verifizierungs-Einstellungen zurück.
+
+---
+
+## 🧩 Setup Guide (English) (English)
 ### 1. Select the verification role
 Use `/verify-setup` and choose the role users should get after verifying.
 
@@ -45,46 +74,26 @@ Run:
 And your verification message will appear.
 
 ---
-## 🧩 Setup Anleitung (Deutsch)
+## 🧩 Setup Anleitung (Deutsch) (Deutsch)
 ### 1. Verifizierungsrolle auswählen
-Nutze `/verify-setup` und wähle die Rolle aus, die Nutzer nach der Veri
-Gib hier eine klare, kurze Einführung zu deinem Projekt. Beschreibe Zweck, Zielgruppe und grundlegende Funktionen.
+Nutze `/verify-setup` und wähle die Rolle aus, die Nutzer nach der Verifizierung erhalten sollen.
 
-## 📦 Installation
+![Rolle auswählen](./images/verify-role.png)
+
+### 2. Kanal auswählen
+Lege fest, in welchem Kanal die Verifizierungsnachricht gesendet werden soll.
+
+![Kanal auswählen](./images/verify-channel.png)
+
+### 3. Embed anpassen
+Titel, Beschreibung und Footer einstellen.
+
+![Modal Screenshot](./images/verify-modal.png)
+
+### 4. Embed senden
+Führe aus:
 ```bash
-git clone https://github.com/dein/repo.git
-cd repo
-npm install
+/verify-send
 ```
+Dann erscheint die Verifizierungsnachricht im ausgewählten Kanal.
 
-## ⚙️ Konfiguration
-```json
-{
-  "token": "DEIN_TOKEN",
-  "debug": true
-}
-```
-
-## 🧪 Nutzung / API
-```bash
-npm start
-```
-
-## ❓ FAQ
-**Frage 1:** Beispielantwort.
-
-**Frage 2:** Beispielantwort.
-
----
-
-Falls du interaktive React-Komponenten nutzen willst, kannst du sie direkt einbauen:
-
-```jsx
-export const Hinweis = () => (
-  <div style={{ padding: "10px", background: "#f0f0f0", borderRadius: "8px" }}>
-    💡 **Hinweis:** Dies ist eine eingebettete React-Komponente in MDX.
-  </div>
-);
-```
-
-<Hinweis />
