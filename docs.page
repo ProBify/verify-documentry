@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projekt-Dokumentation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f5f5f5;
+    }
+    header {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin-right: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 40px;
+    }
+    code {
+      background: #eee;
+      padding: 3px 6px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #fff;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projekt-Dokumentation</h1>
+    <p>Übersicht & Anleitung</p>
+  </header>
 
+  <nav>
+    <a href="#intro">Einführung</a>
+    <a href="#setup">Installation</a>
+    <a href="#config">Konfiguration</a>
+    <a href="#api">API / Nutzung</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <div class="container">
+    <section id="intro">
+      <h2>1. Einführung</h2>
+      <p>Hier steht eine Beschreibung deines Projekts. Erkläre kurz, was es macht, warum es existiert und für wen es gedacht ist.</p>
+    </section>
+
+    <section id="setup">
+      <h2>2. Installation</h2>
+      <p>Erkläre, wie man dein Projekt installiert.</p>
+      <pre><code>git clone https://github.com/dein/repo.git
+cd repo
+npm install</code></pre>
+    </section>
+
+    <section id="config">
+      <h2>3. Konfiguration</h2>
+      <p>Beschreibe alle Einstellungen deiner Anwendung.</p>
+      <pre><code>{
+  "token": "DEIN_TOKEN",
+  "debug": true
+}</code></pre>
+    </section>
+
+    <section id="api">
+      <h2>4. API / Nutzung</h2>
+      <p>Zeige Beispiele, wie das Projekt genutzt wird.</p>
+      <pre><code>npm start</code></pre>
+    </section>
+
+    <section id="faq">
+      <h2>5. FAQ</h2>
+      <p>Beantworte häufige Fragen zu deinem Projekt.</p>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Dein Projekt – Dokumentation</p>
+  </footer>
+</body>
+</html>
