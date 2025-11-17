@@ -1,12 +1,53 @@
 ---
-title: "Verify Bot"
+title: "Projekt-Dokumentation"
 ---
 
 # Projekt-Dokumentation
 
+PB Verify is one of the fastest and simplest Discord verification bots on the market.
+
+To set it up:
+1. Use `/verify-setup`
+2. Then use `/verify-send` to send the embed.
+
+## 🌍 Multilingual Support
+PB Verify supports multiple languages and can automatically adapt to the user's Discord language settings.
+
 Willkommen zur offiziellen Dokumentation deines Projekts. Diese Seite ist als **MDX** aufgebaut und kann interaktive Komponenten enthalten.
 
-## 🚀 Einführung
+## 🚀 Introduction / Einführung
+PB Verify is one of the fastest and simplest Discord verification bots on the market.
+
+PB Verify gehört zu den schnellsten und einfachsten Verifizierungs-Bots für Discord.
+
+---
+## 🧩 Setup Guide (English)
+### 1. Select the verification role
+Use `/verify-setup` and choose the role users should get after verifying.
+
+![Select Role](./images/verify-role.png)
+
+### 2. Select the channel
+Choose where the verification embed should be sent.
+
+![Select Channel](./images/verify-channel.png)
+
+### 3. Customize your verify embed
+Set title, description and footer.
+
+![Verify Modal](./images/verify-modal.png)
+
+### 4. Send the embed
+Run:
+```bash
+/verify-send
+```
+And your verification message will appear.
+
+---
+## 🧩 Setup Anleitung (Deutsch)
+### 1. Verifizierungsrolle auswählen
+Nutze `/verify-setup` und wähle die Rolle aus, die Nutzer nach der Veri
 Gib hier eine klare, kurze Einführung zu deinem Projekt. Beschreibe Zweck, Zielgruppe und grundlegende Funktionen.
 
 ## 📦 Installation
@@ -41,7 +82,9 @@ Falls du interaktive React-Komponenten nutzen willst, kannst du sie direkt einba
 ```jsx
 export const Hinweis = () => (
   <div style={{ padding: "10px", background: "#f0f0f0", borderRadius: "8px" }}>
+    💡 **Hinweis:** Dies ist eine eingebettete React-Komponente in MDX.
   </div>
 );
 ```
 
+<Hinweis />
